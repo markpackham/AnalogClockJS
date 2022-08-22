@@ -9,7 +9,7 @@ function getTime() {
   const hours = now.getHours();
   const timeInterval = 6;
 
-  secondsHand.style.transform = "rotate(60deg)";
+  secondsHand.style.transform = "rotate(" + seconds * timeInterval + "deg)";
 }
 
-getTime();
+setInterval(getTime, 100);
