@@ -10,6 +10,9 @@ function getTime() {
   const timeInterval = 6;
 
   secondsHand.style.transform = "rotate(" + seconds * timeInterval + "deg)";
+  minutesHand.style.transform =
+    "rotate(" + (minutes * timeInterval + seconds / 10) + "deg)";
+  hoursHand.style.transform = "rotate(" + (hours * 30 + minutes / 2) + "deg)";
 }
 
 setInterval(getTime, 100);
