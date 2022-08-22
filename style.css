@@ -23,3 +23,23 @@ body {
     bottom: 149px;
     opacity: 50%;
 }
+
+.minutes-hand {
+    position: absolute;
+    height: 100px;
+    width: 2px;
+    background-color: hsl(289, 36%, 41%);
+    left: 149px;
+    bottom: 149px;
+    opacity: 50%;
+}
+
+.hours-hand {
+    position: absolute;
+    height: 80px;
+    width: 4px;
+    background-color: hsl(31, 42%, 47%);
+    left: 148px;
+    bottom: 148px;
+    opacity: 50%;
+}
